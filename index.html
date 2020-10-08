@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bülent Üstün - mbu.codes</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="css/ascii-menu.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <!-- <script src="gradient-bg.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stack.css">
+    </link>
+    <link rel="stylesheet" href="css/about.css">
+    </link>
+    <link rel="stylesheet" href="css/loader.css">
+    </link>
+    <style>
+        object{
+            width: 1px !important;
+            height: 1px !important;
+        }
+    </style>
+</head>
+
+<body style="background-color: #FFF;">
+    <div class="page-container">
+        <div class="left-menu gradient" style="overflow: hidden;">
+            <div class="left-menu-content" style="z-index: 100;">
+                <a href="index.html">
+                    <div class="photo"><img src="img/profile.png" /></div>
+                    <div class="name">Bülent Üstün</div>
+                    <div class="title">Full-Stack Software Developer</div>
+                </a>
+                <div class="menu-container">
+                    <ul>
+                        <li><a href=""><a href="#" onclick="loadContent('about.html')">History</a></li>
+                        <li><a href=""><a href="#" onclick="loadContent('projects.html')">Projects</a></li>
+                        <li><a href=""><a href="#" onclick="loadContent('stack.html')">Stack</a></li>
+                    </ul>
+                </div>
+                <div style="position:absolute; bottom:30px; width: 100%; text-align: center;">
+                    <a href="https://www.linkedin.com/in/mbu/" target="_blank"><img src="img/linkedin.png" style="width: 30px;"/></a>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="position:fixed; top:0px; left:0px; width:300px; height:150px; z-index:10;">
+                <path d="M 0,0 300,0 300,100 0,140"
+                    style="stroke-width: 0; stroke: transparent; fill:rgba(0, 0, 0, 0.2);"></path>
+            </svg>
+        </div>
+        <div class="content-container">
+            <div class="loader vertical-centered-box" style="display: none;">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask one">
+                        <div class="loader-line"></div>
+                    </div>
+                    <div class="loader-line-mask two">
+                        <div class="loader-line"></div>
+                    </div>
+                    <div class="loader-line-mask three">
+                        <div class="loader-line"></div>
+                    </div>
+                    <div class="loader-line-mask four">
+                        <div class="loader-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="main-wrapper stack">
+                    <section class="overview-section p-3 p-lg-5">
+                        <div class="container">
+                            <h2 class="section-title font-weight-bold mb-3">WELCOME</h2>
+                            <div class="section-intro mb-5">
+                            </div>
+                            <div class="row" style="font-size: 20px; text-align: justify; text-justify: inter-word; max-width: 980px;">
+                                <p style="font-size:24px;">
+                                    Hi, my name is Bülent Üstün.<br />
+                                    I'm a Full-Stack Software Developer with experience as a senior developer, teamlead and software architect. 
+                                </p>
+                                <p>
+                                    Predominantly I have worked in Logistics, E-Business and E-Commerce industries.
+                                </p>
+                                <p>
+                                    I have started programming in an early age by using BASIC and I haven't stopped since.
+                                    By developing a wide range of solutions over the years my skill set grew considerably. 
+                                    As I don't like to confine myself I'm always open to learning new things.
+                                    Also finding the balance between what's trendy and what's really useful in the long run.
+                                </p>
+                                <p>
+                                    I'm a cooperative, ambitious, inquisitive, dedicated and flexible person by nature.
+                                </p>
+                                <p>
+                                    You can get more information about me from the menu.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div id="preload">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/svgimport.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script src="//codefog.github.io/jquery-gradientify/jquery.gradientify.min.js"></script>
+
+</body>
+<script>
+    var loader = document.querySelector(".loader");
+    var contentArea = document.querySelector("#content");
+    var preloadArea = document.querySelector("#preload");
+
+    
+    function loadContent(url) {
+        //Loading animation
+        contentArea.style.visibility = "collapse";
+        loader.style.display = "block";
+
+        contentArea.classList.remove("hide");
+        fetch(url)
+            .then(res => res.text())
+            .then(response => {
+                contentArea.innerHTML = response;
+                addSvgObjectHooks();
+            })
+            .catch(err => {
+                console.log(err)
+                alert("Couldn't get the page")
+            })
+            .finally(() => {
+                setTimeout(function () {
+                    contentArea.style.visibility = "visible";
+                    contentArea.classList.remove("hide");
+                    loader.style.display = "none";
+                }, 500);
+            });
+    }
+
+</script>
+<style>
+
+</style>
+
+
+
+</html>

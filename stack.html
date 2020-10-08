@@ -1,0 +1,211 @@
+<style>
+    .stack ul {
+        columns: 140 2;
+        padding-left: 0px;
+        list-style: none;
+        list-style-position: inside;
+    }
+
+    .stack ul li {
+        word-wrap: none !important;
+    }
+
+    .stack ul li::before {
+        content: "•";
+        font-size: 130%;
+        line-height: 0;
+        margin: 0 0.3rem 0 -0.25rem;
+        position: relative;
+        top: 0.08rem;
+    }
+
+    .stack ul li::before,
+    .item-title {
+        color: #54b689;
+    }
+
+    .stack object,
+    .stack svg {
+        width: 45px;
+        height: auto;
+        fill: #54b689;
+        /* stroke: #2ac7df; */
+    }
+</style>
+<div class="main-wrapper stack">
+    <section class="overview-section p-3 p-lg-5">
+        <div class="container">
+            <h2 class="section-title font-weight-bold mb-3">STACK</h2>
+            <div class="section-intro mb-5">A list of technologies I use.</div>
+            <div class="row">
+                <div class="item col-6 col-lg-3">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <object id="obj-server" type="image/svg+xml" data="img/server.svg"
+                                onload="console.log('test')"></object>
+                        </div>
+                        <h3 class="item-title">Server side</h3>
+                        <div class="item-desc">
+                            <ul>
+                                <li>ASP.NET &amp; Core (C#)</li>
+                                <li>Spring (Java)</li>
+                                <li>Go</li>
+                                <li>Microservices</li>
+                                <li>Kafka</li>
+                                <li>RabbitMQ</li>
+                                <li>Redis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//item-inner-->
+                </div>
+                <!--//item-->
+                <div class="item col-6 col-lg-3">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <object id="obj-iot" type="image/svg+xml" data="img/browser.svg"></object>
+                        </div>
+                        <h3 class="item-title">Web Front-End</h3>
+                        <div class="item-desc">
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>Vue.js</li>
+                                <li>React</li>
+                                <li>Angular.js</li>
+                                <li>Jquery</li>
+                                <li>Ajax</li>
+                                <li>WebSockets</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//item-inner-->
+                </div>
+                <!--//item-->
+
+                <div class="item col-6 col-lg-3">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <object id="obj-iot" type="image/svg+xml" data="img/mobile.svg"></object>
+                        </div>
+                        <h3 class="item-title">Mobile</h3>
+                        <div class="item-desc">
+                            <ul>
+                                <li>Android (Native)</li>
+                                <li>iOS (Native)</li>
+                                <li>Flutter</li>
+                                <li>Unity (C#)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//item-inner-->
+                </div>
+                <!--//item-->
+
+                <div class="item col-6 col-lg-3">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <object id="obj-iot" type="image/svg+xml" data="img/chip.svg"></object>
+                        </div>
+                        <h3 class="item-title">Desktop & Device</h3>
+                        <div class="item-desc">
+                            <ul>
+                                <li>C#</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>Bash</li>
+                                <li>C &amp; C++</li>
+                                <li>Embedded C</li>
+                                <li>ARM</li>
+                                <li>Arduino</li>
+                        </div>
+                    </div>
+                    <!--//item-inner-->
+                </div>
+                <!--//item-->
+                <div class="item col-6 col-lg-3">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <object id="obj-iot" type="image/svg+xml" data="img/db.svg"></object>
+                        </div>
+                        <h3 class="item-title">Database</h3>
+                        <div class="item-desc">
+                            <ul>
+                                <li>EF &amp; EF.Core</li>
+                                <li>Hibernate</li>
+                                <li>SQL</li>
+                                <li>SQL Server</li>
+                                <li>Oracle</li>
+                                <li>Postgre SQL</li>
+                                <li>MySql</li>
+                                <li>Mongo DB</li>
+                                <li>Couch DB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//item-inner-->
+                </div>
+                <!--//item-->
+                <div class="item col-6 col-lg-3">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <object id="obj-iot" type="image/svg+xml" data="img/hosting.svg"></object>
+                        </div>
+                        <h3 class="item-title">Hosting</h3>
+                        <div class="item-desc">
+                            <ul>
+                                <li>IIS</li>
+                                <li>Tomcat</li>
+                                <li>AWS</li>
+                                <li>Docker</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//item-inner-->
+                </div>
+                <!--//item-->
+                <div class="item col-6 col-lg-3">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <object id="obj-network" type="image/svg+xml" data="img/network.svg"
+                                data-name="Communication" data-category="communication"
+                                style="left: 150px;top: 150px; "></object>
+                            <h3 class="item-title">Communication</h3>
+                            <div class="item-desc">
+                                <ul>
+                                    <li>REST</li>
+                                    <li>SOAP-XML</li>
+                                    <li>WebSockets</li>
+                                    <li>FIX</li>
+                                    <li>Cryptography</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--//item-inner-->
+                    </div>
+                    <!--//item-->
+                </div>
+
+
+                <div class="item col-6 col-lg-3">
+                    <div class="item-inner">
+                        <div class="item-icon">
+                            <object id="obj-network" type="image/svg+xml" data="img/team.svg" data-name="Communication"
+                                data-category="communication" style="left: 150px;top: 150px; "></object></div>
+                        <h3 class="item-title">Teamwork</h3>
+                        <div class="item-desc">
+                            <ul>
+                                <li>Git</li>
+                                <li>Jira</li>
+                                <li>Slack</li>
+                            </ul>
+                        </div>
+                        <!--//item-inner-->
+                    </div>
+                    <!--//item-->
+                </div>
+
+                <!--//row-->
+            </div>
+            <!--//container-->
+    </section>
+</div>
